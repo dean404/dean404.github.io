@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+    <title>A Guide To The World Of Music</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Band On The Wall, BOTW, A Guide To The World Of Music">
+    <link href="./CSS/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <img class="logo navbar-brand" src="./images/logo.jpg" alt="BOtW logo">
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="bands.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bands <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="drop-hover" href="./bands/african.html">African</a></li>
+                            <li><a class="drop-hover" href="./bands/spanish.html">Spanish</a></li>
+                            <li><a class="drop-hover" href="./bands/reggae.html">Reggae</a></li>
+                            <li><a class="drop-hover" href="./bands/chinese.html">Chinese</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./events.html">Events</a></li>
+
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default" style="color:white;">Submit</button>
+                    </form>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" onclick="toggleText()">Toggle Text</a></li>
+                    <li><a href="https://www.justgiving.com/campaigns/charity/innercity-music/musicenricheslives">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            <div id="carouselExampleSlidesOnly" class="carousel slide all" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="d-block img-fluid" src="./images/carousel1.jpg" alt="The Beatles">
+                    </div>
+                    <div class="item">
+                        <img class="d-block img-fluid" src="./images/carousel2.jpg" alt="African band">
+                    </div>
+                    <div class="item">
+                        <img class="d-block img-fluid" src="./images/carousel3.jpg" alt="Mariachi">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="row">
+                <div class="thumbnail">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.0616768304526!2d-2.2362625841563144!3d53.48522778000837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1b91030033d%3A0xaa81a1ee730488c5!2sBand+on+the+Wall!5e0!3m2!1sen!2suk!4v1497013463568"
+                        width="100%" height="50%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="caption">
+                        <h3 class="title">Google maps location</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4 class="title">Band on the Wall 25 Swan Street The Northern Quarter Manchester M4 5JW</h4>
+                        <br>
+                        <h4>T. 0161 834 1786 </h4>
+                        <h4> E.info@bandonthewall.org</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row test">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">The End</h3>
+                    <p class="card-text">The 93 ‘Till Infinity dons return to the UK after…</p>
+                    <a href="./events.html" class="btn" style="border-color: #5d9192">View event</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Hackney Colliery Band</h3>
+                    <p class="card-text">East London’s Hackney Colliery Band continue to reinvent the brass…</p>
+                    <a href="./events.html" class="btn" style="border-color: #5d9192">View event</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row test">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Shake Rattle & Roll</h3>
+                    <p class="card-text">Brighter Sound presents Shake Rattle & Roll - music making sessions for…</p>
+                    <a href="./events.html" class="btn" style="border-color: #5d9192">View event</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Golden Voices</h3>
+                    <p class="card-text">We’re thrilled to welcome Manchester’s most welcoming choir back to…</p>
+                    <a href="./events.html" class="btn" style="border-color: #5d9192">View event</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="footer-elements sponsors">
+                <h2>Sponsors:</h2>
+                <div class="col-sm-4 footer-elements-sponsors">
+                    <img src="./images/sponsor1.png" alt="sponsor1" class="footer-image1">
+                    <img src="./images/sponsor2.png" alt="sponser2" class="footer-image2">
+                </div>
+
+                <div class="col-sm-2 footer-elements">
+                    <li><a href="./bands/african.html" class="quick-link">African music</a></li>
+                    <li><a href="./bands/spanish.html" class="quick-link">Spanish music</a></li>
+                </div>
+
+                <div class="col-sm-2 footer-elements">
+                    <li><a href="./bands/reggae.html" class="quick-link">Reggae</a></li>
+                    <li><a href="./bands/chinese.html" class="quick-link">Chinese music</a></li>
+                </div>
+
+                <div class="col-sm-4 footer-elements">
+                    <i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-soundcloud fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://email.tl.fortawesome.com/c/eJxNjUEOwiAQRU9TlmRmmBa6YOFC7kHKkGpaWwtqvL2kK5O_evl5L_kkQxKrbp4ALQwIOBqDqHsgJo3hyjYAj0BwCYwdQ1103o4aP1K2VfS0rWr2FngwgugE0MXs-inZHJET5Sn3WdTi51r30plLR6HtVaRpHv-aRkcGBHeW70Ud_k28PFtTvrLHUs_bD3p7NJ8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./JS/script.js"></script>
+</body>
+
+</html>
