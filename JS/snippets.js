@@ -1,6 +1,8 @@
 function scroll() {
+    var x = document.getElementById("navbar").clientHeight;
     var y = document.getElementById("splash").clientHeight;
-    window.scrollBy(0, y);
+    var z = y - x;
+    window.scrollBy(0, z);
 }
 
 var title = document.querySelector("#title");
