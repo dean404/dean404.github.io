@@ -76,7 +76,7 @@ span {
   white-space: nowrap;
   margin: 0;
   padding: 15px 0px 15px 0px;
-   background-color: rgba(0, 0, 0, 0.8); 
+  /* background-color: rgba(0, 0, 0, 0.8); */
   overflow: hidden;
   width: 100%;
   animation: typing 3s steps(70, end),
@@ -90,7 +90,7 @@ span {
   white-space: nowrap;
   margin: 0;
   padding: 15px 0px 15px 0px;
-  background-color: rgba(0, 0, 0, 0.8); 
+  /* background-color: rgba(0, 0, 0, 0.8); */
   overflow: hidden;
   width: 100%;
   animation: typing 3s steps(70, end) 3s,
