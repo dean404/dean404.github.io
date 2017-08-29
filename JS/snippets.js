@@ -6,10 +6,10 @@ function scroll() {
 }
 
 var title = document.querySelector("#title");
-
 var subText = document.querySelector("#subText");
 
 title.addEventListener("animationend",function(e){
     title.style.border = 0;
-    subText.style.visibility = "visible";
+    subText.style.visibility = "visible";  
 },false);
+
