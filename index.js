@@ -1,9 +1,9 @@
 let menu = document.getElementById("menu");
 let burgerMenu = document.getElementById("burger");
-let lastScrollPos = 0;
-let ticking = false;
-let navbar = document.querySelector('nav');
+let nav = document.querySelectorAll('nav');
+let navbar = nav[1];
 let distanceTop = navbar.offsetTop;
+let ticking = false;
 
 function stick() {
 	if (window.pageYOffset >= distanceTop) {

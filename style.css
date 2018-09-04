@@ -60,10 +60,6 @@ hr {
 	transform: scaleX(1);
 }
 
-#burger {
-	/* display: none; */
-}
-
 #menu {
 	display: none;
 }
