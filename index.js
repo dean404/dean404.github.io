@@ -1,4 +1,5 @@
 let menu = document.getElementById("menu");
+let burgerMenu = document.getElementById("burger");
 let lastScrollPos = 0;
 let ticking = false;
 let navbar = document.querySelector('nav');
@@ -24,9 +25,10 @@ function awaitTransition() {
 }
 
 //show menu
-document.getElementById("first").onclick = function() {
+document.getElementById("burger").onclick = function() {
   menu.style.animation = "fadeIn 200ms ease-in-out";
   menu.classList.toggle("showHide");
+  burgerMenu.style.display = "none";
 };
 
 // hide menu
@@ -34,4 +36,5 @@ document.getElementById("cross").onclick = async function() {
   menu.style.animation = "fadeOut 200ms ease-in-out";
   let remove = await awaitTransition();
   menu.classList.toggle("showHide");
+  burgerMenu.style.display = "block";
 };
