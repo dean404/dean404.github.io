@@ -5,7 +5,7 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: Verdana, sans-serif;
-	background-color: #dbdbdb;
+	background-color: #2f3542;;
 }
 
 hr {
@@ -13,7 +13,10 @@ hr {
 }
 
 h2 {
+	color: #74bfdd;
 	margin-bottom: 0;
+	font-size: 2.3em;
+	/* text-decoration: underline #fb474d; */
 }
 
 em {
@@ -23,6 +26,10 @@ em {
 b {
 	color: #74bfdd;
 	text-shadow: 6px 6px 0px rgba(0,0,0,0.5);
+}
+
+p { 
+	font-size: 1.3em;
 }
 
 ul {
@@ -133,62 +140,81 @@ k
 
 .about {
 	width: 100%;
-	margin-top: 5%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 }
 
 .aboutMe {
+	color: white;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	z-index: -1;
+}
+
+.splitA {
+	width: 0; 
+	height: 0; 
+	position: absolute;
+	border-top: 100vh solid transparent;
+	border-left: 95vw solid #2f4154; 
+	border-right: 50px solid transparent; 
+  }
+  
+.splitB {
+	padding: 0;
+	margin: 0;
+	width: 0; 
+	height: 0;
+	position: relative;
+	border-bottom: 90vh solid transparent;
+	border-right: 99.4vw solid #57606f; 
+	border-top: 0px solid transparent; 
+}
+
+.aboutMe {
 	width: 80%;
+	margin-top: 5%;
 	margin-bottom: 5%;
 	text-align: center;
 }
 
-.frontend, .backend {
+.frontend, .backend, .other {
 	width: 30%;
-	height: 200vh;
 	padding: 5px;
+	color: white;
 	display: flex;
 	text-align: center;
 	flex-direction: column;
+	/* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+	/* border: 1px solid #74bfdd; */
+	background-color: rgba(64, 64, 64, 0.664);
 }
 
-.other {
-	width: 30%;
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-}
+/* .frontend > h2, .backend > h2, .other > h2 {
+	text-decoration: underline #fb474d;
+} */
 
 /* start work page */
 
-.work {
-	width: 90vw;
-	height: 100vh;
+/* .workPage {
+	width: 100%;
+	height: 90vh;
 	display: flex;
-	background-color: #0074D9;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 }
 
-/* start keyframes */
-
-@keyframes type {
-	from {
-		width: 0%;
-	}
-	to {
-		width: 20%;
-	}
-}
-
-@keyframes blink {
-	from, to {
-		border-color: transparent;
-	}
-	50% {
-		border-color: #fb474d;
-	}
-}
+.work {
+	height: 30%;
+	width: 30%;
+	background-color: #fb474d;
+} */
 
 /* start media queries */
 
