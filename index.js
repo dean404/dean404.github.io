@@ -3,10 +3,23 @@ let burgerIcon = document.getElementById("burger");
 let navbar = document.getElementById("navbar");
 let splashPage = document.getElementById("splash");
 let distanceTop = navbar.offsetTop;
-
+let cards = document.getElementsByClassName("card");
+let about = document.getElementById("aboutMe");
 window.onscroll = (() => {
 	stick();
 	slowScroll();
+
+	if (isInViewport(cards[0])) {
+		for(let i = 0; i < 3; i++) {
+			setTimeout(function() {
+				cards[i].classList.add("appear");
+			}, 200*(i+1));
+		}
+	}
+
+	if (isInViewport(about)) {
+		about.classList.add("appear");
+	}
 });
 
 window.onresize = (() => {
@@ -27,7 +40,7 @@ function correctNavbar() {
 // fix navbar to top of page or fix i to the bottom
 function stick() {
 	correctNavbar();
-	 if (window.pageYOffset >= distanceTop) {
+	if (window.pageYOffset >= distanceTop) {
 		navbar.classList.remove("navigationBarBottom");
 		navbar.classList.add("navigationBarTop");
 	} else {
@@ -65,8 +78,20 @@ function slowScroll() {
 	if (document.body.clientWidth >= 800) {
 		let wScroll = window.pageYOffset;
 		let introBox = document.getElementById("intro");
-		introBox.style.transform = "translate(0px, " + wScroll/2.3 + "%)";	
+		introBox.style.transform = "translate(0px, " + wScroll / 2.6 + "%)";
 	} else {
 		//do nothing
 	}
+}
+
+// check if element is in viewport
+function isInViewport(element) {
+	var rect = element.getBoundingClientRect();
+	var html = document.documentElement;
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <= (window.innerHeight || html.clientHeight) &&
+		rect.right <= (window.innerWidth || html.clientWidth)
+	);
 }
