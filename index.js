@@ -7,13 +7,12 @@ let cards = document.getElementsByClassName("card");
 let about = document.getElementById("aboutMe");
 window.onscroll = (() => {
 	stick();
-	slowScroll();
 
 	if (isInViewport(cards[0])) {
 		for(let i = 0; i < 3; i++) {
 			setTimeout(function() {
 				cards[i].classList.add("appear");
-			}, 200*(i+1));
+			}, 150*(i+1));
 		}
 	}
 
@@ -72,17 +71,6 @@ document.getElementById("cross").onclick = async function () {
 	menu.classList.toggle("showHide");
 	burgerIcon.style.display = "block";
 };
-
-// slow the scroll of te intro text
-function slowScroll() {
-	if (document.body.clientWidth >= 800) {
-		let wScroll = window.pageYOffset;
-		let introBox = document.getElementById("intro");
-		introBox.style.transform = "translate(0px, " + wScroll / 2.6 + "%)";
-	} else {
-		//do nothing
-	}
-}
 
 // check if element is in viewport
 function isInViewport(element) {
