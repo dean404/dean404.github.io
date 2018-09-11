@@ -5,7 +5,6 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: Verdana, sans-serif;
-	background-color: #2f3542;
 }
 
 hr {
@@ -99,8 +98,9 @@ k
 #splash {
 	width: 100%;
 	height: 100%;
-	display: flex;
 	position: relative;
+	will-change: transform;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -111,14 +111,17 @@ k
 	background-position: top center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	z-index: -2;
 }
 
 #intro {
 	width: 70vw;
+	will-change: transform;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	z-index: -1;
 }
 
 .title, .introText {
@@ -136,40 +139,10 @@ k
 	font-size: 4em;
 }
 
-/* start background */
-
-/* .background {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-	z-index: -1;
-	background-color: #57606f;
-} */
-
-/* .splitA {
-	width: 0; 
-	height: 0; 
-	position: absolute;
-	border-top: 35vh solid transparent;
-	border-left: 99.3vw solid #2f4154; 
-  }
-  
-.splitB {
-	padding: 0;
-	margin: 0;
-	width: 0; 
-	height: 0;
-	position: relative;
-	border-bottom: 35vh solid transparent;
-	border-right: 99.3vw solid #57606f; 
-} */
-
 /* start about page */
 
 .about {
 	width: 100%;
-	/* height: auto; */
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
@@ -210,10 +183,10 @@ k
 
 .work {
 	width: 100%;
-	/* height: 100%; */
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+	background-color: #2f3542;
 }
 
 .workText {
@@ -233,6 +206,16 @@ k
 	display: flex;
 	flex-direction: column;
 	background-color: rgba(64, 64, 64, 0.664);
+}
+
+/* start contact */
+
+.contact {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	background-color: #202020;
 }
 
 /* start keyframes */

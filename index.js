@@ -7,6 +7,7 @@ let cards = document.getElementsByClassName("card");
 let about = document.getElementById("aboutMe");
 window.onscroll = (() => {
 	stick();
+	slowScroll();
 
 	if (isInViewport(cards[0])) {
 		for(let i = 0; i < 3; i++) {
@@ -82,4 +83,15 @@ function isInViewport(element) {
 		rect.bottom <= (window.innerHeight || html.clientHeight) &&
 		rect.right <= (window.innerWidth || html.clientWidth)
 	);
+}
+
+// slow the scroll of te intro text
+function slowScroll() {
+	if (document.body.clientWidth >= 800) {
+		let wScroll = window.pageYOffset;
+		let introBox = document.getElementById("intro");
+		introBox.style.transform = "translate(0px, " + wScroll/2.3 + "%)";	
+	} else {
+		//do nothing
+	}
 }
