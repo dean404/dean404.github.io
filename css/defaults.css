@@ -1,0 +1,45 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Verdana, sans-serif;
+}
+
+hr {
+	width: 90vw;
+}
+
+h1 {
+	color: #fff;
+}
+
+h2 {
+	color: #fff;
+	margin-bottom: 0;
+	font-size: 2.3em;
+}
+
+em {
+	color: #74bfdd;
+}
+
+b {
+	color: #74bfdd;
+	text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+p {
+	font-size: 1.3em;
+	color: white;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	font-size: 1.3em;
+}

@@ -2,18 +2,19 @@ let menu = document.getElementById("menu");
 let burgerIcon = document.getElementById("burger");
 let navbar = document.getElementById("navbar");
 let splashPage = document.getElementById("splash");
-let distanceTop = navbar.offsetTop;
 let cards = document.getElementsByClassName("card");
 let about = document.getElementById("aboutMe");
+let distanceTop = navbar.offsetTop;
+
 window.onscroll = (() => {
 	stick();
 	slowScroll();
 
 	if (isInViewport(cards[0])) {
-		for(let i = 0; i < 3; i++) {
-			setTimeout(function() {
+		for (let i = 0; i < 3; i++) {
+			setTimeout(function () {
 				cards[i].classList.add("appear");
-			}, 150*(i+1));
+			}, 150 * (i + 1));
 		}
 	}
 
@@ -22,6 +23,7 @@ window.onscroll = (() => {
 	}
 });
 
+// correct the position of the navar if the user changes the size of the window
 window.onresize = (() => {
 	correctNavbar();
 });
@@ -37,7 +39,7 @@ function correctNavbar() {
 	distanceTop = navbar.offsetTop;
 }
 
-// fix navbar to top of page or fix i to the bottom
+// fix navbar to top or bottom of page 
 function stick() {
 	correctNavbar();
 	if (window.pageYOffset >= distanceTop) {
@@ -89,9 +91,18 @@ function isInViewport(element) {
 function slowScroll() {
 	if (document.body.clientWidth >= 800) {
 		let wScroll = window.pageYOffset;
-		let introBox = document.getElementById("intro");
-		introBox.style.transform = "translate(0px, " + wScroll/2.3 + "%)";	
+		let introBox = document.getElementById("hero");
+		introBox.style.transform = "translate(0px, " + wScroll / 3.5 + "%)";
 	} else {
 		//do nothing
 	}
+}
+
+// change state of toggle switch
+
+function changeTheme() {
+	let btn = document.getElementById("switch");
+	let toggle = document.getElementById("toggle");
+	btn.classList.toggle("switchLight");
+	toggle.classList.toggle("toggleLight");
 }
