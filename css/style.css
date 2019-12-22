@@ -161,7 +161,7 @@
 .about {
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	background-color: #57606f;
 }
 
@@ -176,11 +176,16 @@
 	transition: all 500ms ease-in-out;
 }
 
+.aboutMe > p {
+	text-align: justify;
+}
+
 .cardsContainer {
 	width: 100%;
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 .frontend,
