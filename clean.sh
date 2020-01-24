@@ -19,7 +19,7 @@ for file in ~/*; do
 	flag="false"
 
 	for name in "${protected[@]}"; do
-		if [ "$f" == "$name"]
+		if [ "$f" == "$name" ]
 		then
 			flag="true"
 			continue
