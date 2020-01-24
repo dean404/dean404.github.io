@@ -11,7 +11,7 @@ then
 fi
 
 mv ~/Downloads/* ~/Desktop/.backup/Downloads
-mv ~/Desktop/* ~/Desktop/.backup/Desktop
+mv ~/Desktop/!('.backup') ~/Desktop/.backup/Desktop
 mv ~/Documents/* ~/Desktop/.backup/Documents
 
 for file in ~/*; do
