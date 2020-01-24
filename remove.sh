@@ -4,6 +4,7 @@ protected=("Applications" "Desktop" "Documents" "Downloads" "Library" "Movies" "
 rm -rf ~/Downloads/*
 rm -rf ~/Desktop/*
 rm -rf ~/Documents/*
+rm -rf ~/Pictures/*
 
 for file in ~/*; do
 	f=$( echo $file | rev | cut -d/ -f-1 | rev)
